@@ -1,0 +1,91 @@
+{"type":"email","Optype":"select","userid":"1","username":"","password":"123456","telephone":"","email":"aaaaaaa"}
+
+{"type":"","Optype":"insert","userid":"","username":"test","password":"123456","telephone":"1234561","email":"aaaaaaa"}
+{"type":"email","Optype":"update","userid":"1","username":"","password":"123456","telephone":"","email":"aaaaaaa"}
+CREATE TABLE 数据库名.frpuesrdata (
+	userid INT NOT NULL,
+	username varchar(32) NOT NULL,
+	password varchar(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+	email varchar(256) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+	telephone varchar(16) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+	nodesdata varchar(256) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+	nodesnum int NOT NULL
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8mb4
+COLLATE=utf8mb4_0900_ai_ci;
+
+ALTER TABLE frpserver.newtable DROP COLUMN Column1;
+ALTER TABLE frpserver.newtable ADD nodeid INT auto_increment NOT NULL;
+ALTER TABLE frpserver.newtable ADD nodedetails varchar(100) NULL;
+ALTER TABLE frpserver.newtable ADD nodeip varchar(100) NULL;
+ALTER TABLE frpserver.newtable ADD nodecanuseportmin varchar(100) NULL;
+ALTER TABLE frpserver.newtable ADD nodecanuseportmax varchar(100) NULL;
+ALTER TABLE frpserver.newtable ADD CONSTRAINT newtable_pk PRIMARY KEY (nodeid);
+
+{"Optype":"connect","userid":"1","nodesdata":"AAAAAAAA","nodetoken":"123456","nodeip":"","nodeport":"","order":"1"}
+{"Optype":"registra","userid":"1","nodesdata":"AAAAAAAA","nodeport":"1111","speed":"1145"}
+模板
+
+{"type":"email","Optype":"login","userid":"1","username":"","password":"123456","telephone":"","email":"aacccaa"}
+{
+"type":"email",
+"Optype":"login",
+"userid":"1",
+"username":"",
+"password":"123456",
+"telephone":"",
+"email":"aaaaaaa"
+}
+
+
+{"Optype":"signin","username":"test","password":"123456","telephone":"1234561","email":"aaaaaaa"}
+{
+"Optype":"insert",
+"username":"test",
+"password":"123456",
+"telephone":"1234561",
+"email":"aaaaaaa"
+}
+
+
+{"type":"email","Optype":"update","userid":"1","username":"","password":"","telephone":"","email":"aacccaa","member":""}
+{
+"type":"",查询用户时采用的字符串（id）
+"Optype":"update",需要执行的操作（select/insert/update）
+"userid":"1",
+"username":"",
+"password":"123456",
+"telephone":"",
+"email":"aaaaaaa",
+"member":"1"
+}
+
+
+{"Optype":"connect","userid":"1","nodesdata":"AAAAAAAA","nodetoken":"123456","nodeip":"","nodeport":"","nodeid":"357d0c43"}
+{
+"Optype":"connect",
+"userid":"1",
+"nodesdata":"AAAAAAAA",
+"nodetoken":"123456",
+"nodeip":"",
+"nodeport":"",
+"nodeid":"357d0c43"
+}
+
+{"Optype":"registra","userid":"1","nodesdata":"AAAAAAAA","nodeport":"32111","speed":"1145"}
+{
+"Optype":"registra",
+"userid":"1",
+"nodesdata":"AAAAAAAA",
+"nodeport":"1111",
+"speed":"1145"
+}
+
+
+
+
+
+
+
+
