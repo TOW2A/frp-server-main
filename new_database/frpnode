@@ -1,0 +1,11 @@
+-- frpserver.frpnode definition
+
+CREATE TABLE `frpnode` (
+  `nodeid` int NOT NULL AUTO_INCREMENT,
+  `noderemarks` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `nodeip` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `nodecanuseportmin` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `nodecanuseportmax` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `token` varchar(100) NOT NULL,
+  PRIMARY KEY (`nodeid`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

@@ -1,0 +1,15 @@
+-- frpserver.frpuesrdata definition
+
+CREATE TABLE `frpuesrdata` (
+  `userid` int NOT NULL COMMENT '用户id（作为后台唯一识别码）',
+  `username` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '用户名（可用于登录）',
+  `password` varchar(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '密码',
+  `email` varchar(256) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '邮箱',
+  `telephone` varchar(16) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '电话',
+  `nodesnum` int NOT NULL DEFAULT '0' COMMENT '所创建的通道数量',
+  `member` int NOT NULL DEFAULT '0' COMMENT '会员等级0为内测1为标准2为付费',
+  `nodesmaxnum` int NOT NULL DEFAULT '0',
+  PRIMARY KEY (`userid`),
+  UNIQUE KEY `frpuesrdata_un` (`email`,`telephone`),
+  UNIQUE KEY `frpuesrdata_un1` (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

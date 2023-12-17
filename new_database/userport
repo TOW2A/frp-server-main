@@ -1,0 +1,9 @@
+-- frpserver.userport definition
+
+CREATE TABLE `userport` (
+  `nodeid` int NOT NULL COMMENT '此通道的通道id',
+  `userid` int NOT NULL COMMENT '此通道的用户id',
+  `port` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '端口',
+  `nodedata` varchar(8) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '隧道序列号（仅作指示）',
+  `speed` int unsigned NOT NULL DEFAULT '0' COMMENT '通道最大带宽'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
